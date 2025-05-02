@@ -1,0 +1,103 @@
+/* Container for all categories */
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Individual category item */
+  .category-item {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 90px;
+    
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image styling for category icons */
+  .category-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Slight image zoom on hover */
+  .category-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Text under each category icon */
+  .category-item span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Dropdown menu style */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 180px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:15555;
+  }
+  
+  /* Each item inside dropdown */
+  .dropdown-menu span {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover effect for dropdown options */
+  .dropdown-menu span:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Responsive tweak (optional) */
+  @media (max-width: 768px) {
+    .category-container {
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .category-item {
+      width: 80px;
+    }
+  
+    .dropdown-menu {
+      width: 160px;
+    }
+  }
+  

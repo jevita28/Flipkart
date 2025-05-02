@@ -1,0 +1,90 @@
+.orders-container {
+    padding: 20px;
+  }
+  
+  .product-scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+  }
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 12px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+  }
+  
+  
+  .products {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  
+  .product {
+    flex: 0 0 auto;
+    width: 200px; 
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 108px;
+    height: 108px; 
+    object-fit:contain;
+    border-radius: 8px;
+    
+    display: block;
+    margin: 0 auto;
+    
+  }
+  
+  .product center {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .product h3 {
+    display: inline;
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    
+  }
+  
+  .product h3:hover {
+    transform: scale(1.05);
+  }
+  .product h3 {
+    display: block; 
+    margin-top: 4px; 
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
