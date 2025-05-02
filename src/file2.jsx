@@ -17,7 +17,7 @@ function CategoryMenus() {
       {/* Category without dropdown */}
       <div className="category-item">
         <img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="Kilos" />
-        <span>Kilos</span>
+        <span>Items</span>
       </div>
 
       <div className="category-item">
